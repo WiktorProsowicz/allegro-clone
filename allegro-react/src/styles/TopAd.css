@@ -1,0 +1,53 @@
+.topAd {
+    background-color: white;
+}
+
+.topAd__inner {
+    max-width: 1600px;
+    margin: 0 auto 0 auto;
+    position: relative;
+}
+
+.topAd__imageShortHolder, .topAd__imageExpandHolder {
+    display: flex;
+    justify-content: center;
+}
+
+.topAd__imageExpand, .topAd__imageShort {
+    position: relative;
+    width: 1600px;
+}
+
+.topAd__btn-unfold, .topAd__btn-fold {
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 100px;
+    padding: 0 16px;
+    height: 40px;
+    margin-top: 16px;
+    margin-right: 16px;
+    background-color: rgb(245, 90, 5);
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    font-size: 0.85em;
+    transition: background-color .3s ease-in;
+}
+
+.hidden {
+    display: none;
+}
+
+.topAd__btn-unfold:hover, .topAd__btn-fold:hover {
+    cursor: pointer;
+}
+
+.topAd__btn-unfold:focus, .topAd__btn-fold:focus {
+    background-color: #f8a77a;
+}
+
+@media screen and (max-width: 1250px) {
+    .topAd {
+        display: none;
+    }
+}

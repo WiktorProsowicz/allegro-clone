@@ -1,0 +1,239 @@
+.navbar {
+    background-color: white;
+    width: 100%;
+    border-top: 1px solid #CCC;
+    border-top: 1px solid #CCC;
+}
+
+.navbar__inner {
+    height: 76px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__logo {
+    margin-right: 70px;
+    margin-left: 20px;
+}
+
+.navbar__search {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    height: 40px;
+}
+
+.navbar__searchInput {
+    width: 100%;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    padding-left: 10px;
+    font-size: 0.85em;
+}
+
+.navbar__searchMany {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar__searchMany a{
+    text-decoration: none;
+    color: #1baa95;
+    min-width: 90px;
+    text-align: center;
+}
+
+.navbar__searchMany a:focus {
+    color: #24c9b0;
+}
+
+.navbar__searchCategories {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 170px;
+}
+
+.navbar__searchCategories:hover {
+    cursor: pointer;
+}
+
+.navbar__searchCategories > span {
+    display: flex;
+    align-items: center;
+    flex-wrap:nowrap;
+    gap: 15px;
+    font-weight: 400;
+    font-size: 0.95em;
+}
+
+.navbar__searchBtn {
+    min-width: 90px;
+    padding: 0 16px;
+    height: 40px;
+    background-color: rgb(245, 90, 5);
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    font-size: 0.85em;
+    
+}
+
+.navbar__searchBtn:hover {
+    cursor: pointer;
+    background-color: rgb(248, 115, 43);
+}
+
+.navbar__searchBtn:focus {
+    background-color: rgb(243, 140, 85);
+}
+
+.navbar__icons {
+    min-width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: nowrap;
+    margin-left: 80px;
+    margin-right: 50px;
+}
+
+.navbar__myAllegro {
+    margin-left: 10px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    position: relative;
+}
+
+.navbar__myAllegro > a {
+    text-decoration: none;
+    font-size: 0.8em;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1.1em;
+}
+
+.navbar__myAllegro > a:focus {
+    color: black;
+}
+
+.navbar__myAllegro > a:visited {
+    color: black;
+}
+
+
+.navbar__myAllegro > a span img {
+    height: 1.2em;
+    margin-left: 3px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navbar__myAllegro > span {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.9em;
+    gap: 10px;
+    margin-top: 5px;
+    user-select: none;
+}
+
+.navbar__myAllegro > span img {
+    height: 20px;
+}
+
+.navbar__myAllegro > span:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.navbar__myAllegroPopup {
+    width: 300px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: white;
+    gap: 15px;
+    border: 1px solid grey;
+    top: 43px;
+    right: 0px;
+}
+
+.navbar__myAllegroPopup > img {
+    width: 100%;
+    height: auto;
+}
+
+.navbar__myAllegroPopup > h3 {
+    font-size: 1.6em;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.navbar__myAllegroPopupInfo {
+    font-size: 0.8em;
+    color: grey;
+    text-align: center;
+
+}
+
+.navbar__myAllegroPopupBtn {
+    width: 100%;
+    padding: 0 16px;
+    height: 40px;
+    background-color: rgb(245, 90, 5);
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    font-size: 0.85em;
+    transition: background 0.2s linear;
+}
+
+.navbar__myAllegroPopupBtn:hover {
+    cursor: pointer;
+    background-color: rgb(250, 108, 32);
+}
+
+.navbar__myAllegroPopupBtn:focus {
+    background-color: rgb(235, 159, 118);
+}
+
+.navbar__myAllegroPopupSignup {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar__myAllegroPopupSignup > a {
+    text-decoration: none;
+    color: #1baa95;
+}
+
+.navbar__myAllegroPopupSignup > a:hover {
+    color: #37c2ad;
+}
+
+.navbar__myAllegroPopupSignup > a:focus {
+    color: #8eecde;
+}
