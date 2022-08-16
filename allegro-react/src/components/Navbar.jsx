@@ -32,6 +32,14 @@ function Navbar() {
         // }
     }
 
+    const chooseCategory = () => {
+        console.log("ss");
+    }
+
+    const toggleCategories = () => {
+        $(".navbar__searchCategoriesList").toggle();
+    }
+
     const myAllegroClick = () => {
 
         console.log("2222");
@@ -46,7 +54,7 @@ function Navbar() {
             <div className="navbar__inner">
 
                 <div className="navbar__logoHolder">
-                    <a href=""><img src="https://a.allegroimg.com/original/1201da/b8806483460d99ec3739941289ab" className="navbar__logo" /></a>
+                    <a href="#"><img src="https://a.allegroimg.com/original/1201da/b8806483460d99ec3739941289ab" className="navbar__logo" /></a>
                 </div>
 
                 <div className="navbar__search">
@@ -55,8 +63,37 @@ function Navbar() {
 
                     <span className="navbar__searchMany"><a href="#">szukaj&nbsp;wielu</a></span>
 
-                    <span className="navbar__searchCategories">
-                        <span>Wszystkie&nbsp;kategorie <FontAwesomeIcon icon={faChevronDown}/></span>
+                    <span className="navbar__searchCategories" onClick={toggleCategories}>
+
+                        <span>Wszystkie&nbsp;kategorie</span> <span><FontAwesomeIcon icon={faChevronDown}/></span>
+                        <ul className="navbar__searchCategoriesList">
+                            <li className="navbar__searchCategoriesItem"><span>Wszystkie kategorie</span></li>
+
+                            <li className="navbar__searchCategoriesHeader">Kategorie</li>
+
+                            <li onClick={chooseCategory} className="navbar__searchCategoriesItem"><span>Dom i Ogród</span></li>
+                            <li className="navbar__searchCategoriesItem"><span>Dziecko</span></li>
+                            <li className="navbar__searchCategoriesItem"><span>Elektronika</span></li>
+                            <li className="navbar__searchCategoriesItem"><span>Firma i usługi</span></li>
+                            <li className="navbar__searchCategoriesItem"><span>Kolekcje i sztuka</span></li>
+                            <li className="navbar__searchCategoriesItem"><span>Kultura i rozrywka</span></li>
+                            <li className="navbar__searchCategoriesItem"><span>Moda</span></li>
+                            <li className="navbar__searchCategoriesItem"><span>Motoryzacja</span></li>
+                            <li className="navbar__searchCategoriesItem"><span>Nieruchomości</span></li>
+                            <li className="navbar__searchCategoriesItem"><span>Sport i turystyka</span></li>
+                            <li className="navbar__searchCategoriesItem"><span>Supermarket</span></li>
+                            <li className="navbar__searchCategoriesItem"><span>Uroda</span></li>
+                            <li className="navbar__searchCategoriesItem"><span>Zdrowie</span></li>
+
+                            <li className="navbar__searchCategoriesHeader">Inne opcje</li>
+
+                            <li className="navbar__searchCategoriesItem"><span>Cele charytatywne</span></li>
+                            <li className="navbar__searchCategoriesItem"><span>Organizacje charytatywne</span></li>
+                            <li className="navbar__searchCategoriesItem"><span>Sprzedawcy</span></li>
+                            <li className="navbar__searchCategoriesItem"><span>Zakończone</span></li>
+
+                        </ul>
+
                     </span>
 
                     <button className="navbar__searchBtn">SZUKAJ</button>

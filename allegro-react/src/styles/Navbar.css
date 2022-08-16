@@ -62,10 +62,11 @@
     border-left: 1px solid #999;
     padding: 0 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content:space-between;
     align-items: center;
     min-width: 170px;
+    position: relative;
 }
 
 .navbar__searchCategories:hover {
@@ -73,12 +74,55 @@
 }
 
 .navbar__searchCategories > span {
-    display: flex;
-    align-items: center;
-    flex-wrap:nowrap;
     gap: 15px;
     font-weight: 400;
     font-size: 0.95em;
+    user-select: none;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navbar__searchCategoriesList {
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    min-width: 200px;
+    background-color: white;
+    border: 1px solid grey;
+    padding: 5px 0;
+}
+
+.navbar__searchCategoriesList > li::marker {
+    content: "";
+}
+
+.navbar__searchCategoriesList > li:hover {
+    cursor: default;
+}
+
+.navbar__searchCategoriesHeader {
+    font-weight: 700;
+    margin-left: 7px;
+    color: #333;
+}
+
+.navbar__searchCategoriesItem {
+    width: 100%;
+}
+
+.navbar__searchCategoriesItem > span{
+    margin-left: 17px;
+}
+
+.navbar__searchCategoriesItem:first-of-type > span{
+    margin-left: 7px;
+}
+
+.navbar__searchCategoriesItem:hover {
+    background-color: #666;
+    color: white;
+    
 }
 
 .navbar__searchBtn {
