@@ -1,0 +1,23 @@
+.productSH a{
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    position: relative;
+}
+
+.productSH:hover .product__productName{
+    color: #37c2ad;
+}
+
+.productSH:active .product__productName{
+    color: #31ad9b;
+}
+
+.productSH .product__image img {
+    max-width: 100px;
+}
+
+.productSH .product__productName {
+    max-height: 40px;
+    overflow: hidden;
+}

@@ -1,0 +1,24 @@
+.productSimpleH a{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    gap: 10px;
+    position: relative;
+}
+
+.productSimpleH:hover .product__productName{
+    color: #37c2ad;
+}
+
+.productSimpleH:active .product__productName{
+    color: #31ad9b;
+}
+
+.productSimpleH .product__image img {
+    max-width: 100px;
+}
+
+.productSimpleH .product__productName {
+    max-height: 40px;
+    overflow: hidden;
+}

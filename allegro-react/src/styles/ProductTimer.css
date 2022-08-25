@@ -1,0 +1,82 @@
+.productTimer {
+    height: 628px;
+    background: url("https://a.allegroimg.com/original/12cd4e/9cd60d924f9c9d0f2a4294df8c54");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 23px 20px;
+    /* max-width: 550px; */
+}
+
+.productTimer__header {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.productTimer__bottom {
+    border-top: 1px #CCC solid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.productTimer__bottom span {
+    padding: 10px 5px;
+    font-size: 0.9em;
+    
+}
+
+.productTimer__bottom span a {
+    color: #268a7b;
+    letter-spacing: 2px;
+}
+
+.productTimer__bottom span a:hover {
+    color: #38c5b0;
+}
+
+.productTimer__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.productTimer__productContainer {
+    height: 420px;
+    width: 420px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.productTimer__counter {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: 200;
+}
+
+.productTimer__counterCaption {
+    letter-spacing: 1px;
+    margin-right: 10px;
+}
+
+.productTimer__counterTile {
+    padding: 1px 4px;
+    width: 25px;
+    color: white;
+    font-weight: 300;
+    background-color: rgb(2, 117, 2);
+    margin-left: 1px;
+    font-size: 1.2em;
+}
+
+.productTimer__counterColon {
+    padding: 5px 8px;
+}

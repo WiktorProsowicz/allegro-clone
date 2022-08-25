@@ -1,0 +1,154 @@
+.product__infoList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.product__infoList li::marker {
+    content: "";
+}
+
+.product__discountInfo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
+.product__discountBadge {
+    background-color: rgb(33, 194, 67);
+    padding: 2px 4px;
+    border-radius: 5%;
+    font-size: 0.76em;
+    color: white;
+}
+
+.product__crossedPrice {
+    padding: 2px 4px 10px 0;
+    text-decoration: line-through;
+    font-size: 0.8em;
+}
+
+.product__currentPrice {
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    font-size: 1.55em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-left: 3px;
+}
+
+.product__currentPrice * {
+    color: #444;
+}
+
+.product__currentPrice small {
+    font-size: 0.7em;
+}
+
+.product__productName {
+    font-size: 0.9em;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+.product__currentPrice img {
+    height: 0.76em;
+    margin-left: 5px;
+}
+
+.product__currentPriceSmart img {
+    height: 0.76em;
+    margin-left: 5px;
+}
+
+.product__currentPriceSmart {
+    display: flex;
+    justify-content: start;
+}
+
+.product__currentPriceSuffix {
+    margin-left: 5px;
+}
+
+.product__numberBought {
+    display: flex;
+    align-items: center;
+    justify-items: start;
+    gap: 3px;
+    margin-top: 3px;
+}
+
+.product__hitBadge {
+    background-color: rgb(230, 131, 39);
+    padding: 1px 4px;
+    border-radius: 5%;
+    color: white;
+    font-size: 0.76em;
+    margin-right: 5px;
+}
+
+.product__numberBought span:not(.product__hitBadge) {
+    font-size: 0.8em;
+    color: #888;
+}
+
+.product__payLater {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+    font-size: 0.7em;
+    color: #888;
+    margin-top: 4px;
+}
+
+.product__payLater img {
+    height: 1.5em;
+}
+
+.product__productImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product__superPrice {
+    font-size: 0.8em;
+    color: white;
+    padding: 1px 4px;
+    border-radius: 5%;
+    position: absolute;
+    left: 8px;
+    top: 5px;
+    background-color: green;
+}
+
+.product__newProduct {
+    font-size: 0.8em;
+    color: white;
+    padding: 1px 4px;
+    border-radius: 5%;
+    position: absolute;
+    left: 8px;
+    top: 5px;
+    background-color: rgb(69, 206, 206);
+}
+
+.product__smartOnlyBadge {
+    color: white;
+    background-color: rgb(84, 33, 114);
+    padding: 2px 5px;
+    border-radius: 5%;
+    font-size: 0.76em;
+    
+}

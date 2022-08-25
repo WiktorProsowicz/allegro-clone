@@ -11,6 +11,7 @@
 .topAd__imageShortHolder, .topAd__imageExpandHolder {
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .topAd__imageExpand, .topAd__imageShort {

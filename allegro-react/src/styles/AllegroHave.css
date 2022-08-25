@@ -1,0 +1,108 @@
+.allegroHave {
+    margin-top: 16px;
+    background-color: #ff5a00;
+}
+
+.allegroHave__inner {
+    max-width: 1600px;
+    height: 630px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.allegroHave__header {
+    padding: 10px 0;
+}
+
+.allegroHave__header h2 {
+    color: white;
+    font-size: 1.95em;
+    margin-left: 20px;
+    font-weight: 400;
+    letter-spacing: .5px;
+}
+
+.allegroHave__main {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    gap: 16px;
+}
+
+.allegroHave__carousel {
+    width: 100%;
+    /* max-width: 800px; */
+}
+
+.allegroHave__linkCarousel {
+    background-color: white;
+    width: 100%;
+    padding: 0 20px;
+    /* max-width: 800px; */
+}
+
+.allegroHave__linkCarousel .carousel {
+    max-width: 100%;
+}
+
+.allegroHave__linkCarouselContent {
+    display: flex;
+    width: 2600px;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    position: relative;
+    padding: 10px 0;
+}
+
+.allegroHave__linkCarouselItem::marker {
+    content: "";
+}
+
+.allegroHave__linkCarouselItem a{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    position: relative;
+}
+
+
+.allegroHave__linkCarouselItemLabel {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.allegroHave__linkCarouselItemLabel div {
+    background-color: #a9eddd;
+    width: 70%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+}
+
+.allegroHave__linkCarouselItemLabel span {
+    color: #444;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 750px){
+    .allegroHave__main {
+        flex-wrap: wrap;
+    }
+
+    .allegroHave {
+        height: 1180px;
+    }
+}

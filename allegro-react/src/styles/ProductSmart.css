@@ -1,0 +1,35 @@
+.productS {
+
+    max-width: 288px;
+    position: relative;
+    /* height: 100%; */
+}
+
+.productS a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.productS .product__image img {
+    max-width: 288px;
+}
+
+.productS:hover .product__productName {
+    color: #37c2ad;
+}
+
+.productS:active .product__productName{
+    color: #31ad9b;
+}
+
+.productS .product__currentPrice {
+    font-size: 1.9em;
+}
+
+.productS .product__image {
+    height: 100%;
+}

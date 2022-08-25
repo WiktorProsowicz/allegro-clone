@@ -1,0 +1,79 @@
+.productV {
+    width: 224px;
+    height: 420px;
+    position: relative;
+}
+
+.productV a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    
+}
+
+.productV:hover .product__productName{
+    color: #37c2ad;
+}
+
+.productV:active .product__productName{
+    color: #31ad9b;
+}
+
+.productV .product__productName {
+    height: 43px;
+}
+
+.productV .product__image {
+    /* margin-top: 30px; */
+    flex-shrink: 3;
+}
+
+.productV .product__image img {
+    max-width: 100%;
+    /* max-height: 200px; */
+}
+
+.productV .product__currentPrice {
+    font-size: 2em;
+}
+
+.productV .product__currentPriceSmart {
+    font-size: 2em;
+}
+
+.productV .product__infoList {
+    display: grid;
+    grid-template-rows: 29px 43px 25px 40px 10px 18px 18px;
+    height: 190px;
+}
+
+.productV .product__discountInfoLItem{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.productV .product__currentPriceLItem {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.productV .product__currentPriceSmartLItem {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.productV .product__productNameLItem {
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.productV .product__payLaterLItem {
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+.productV .product__numberBoughtLItem {
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
